@@ -1,0 +1,2 @@
+class TodoNotFoundException(BaseException):
+    pass

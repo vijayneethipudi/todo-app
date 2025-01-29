@@ -13,5 +13,6 @@ class TodoItem(Base):
     title = Column(String(255), index=True)
     description = Column(String(500), nullable=True)
     completed = Column(Boolean, default=False)
+    # pylint: disable=not-callable
     created_at = Column(DateTime, server_default=func.current_timestamp())
     updated_at = Column(DateTime, onupdate=func.current_timestamp())

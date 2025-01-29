@@ -16,7 +16,8 @@
             ],
             "env": {
                 "check": "hello",
-                "check2": "hello2"
+                "check2": "hello2",
+                "DATABASE_URL": "mysql+pymysql://root:my-secret-pw@127.0.0.1:3306/utils",
             }
         }
     ]
